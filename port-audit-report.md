@@ -1,8 +1,8 @@
 # 🛡️ Ambient port audit
 
-- **Generated:** 2026-07-16T19:50:01Z
+- **Generated:** 2026-07-16T19:57:20Z
 - **Nodes reporting:** port-audit-worker, port-audit-worker2
-- **Surface:** ✅ 6 used · ⚠️ 4 allowed but never used · 🚫 2 denied
+- **Surface:** ✅ 6 used · ⚠️ 4 allowed but never used · 🚫 1 denied
 
 ## svc-b
 
@@ -11,7 +11,7 @@
 | 7070 | yes | no | no | 🚫 denied |
 | 8080 | yes | yes | yes | ✅ used |
 | 8081 | yes | yes | yes | ✅ used |
-| 8082 | yes | yes | yes | 🚫 denied |
+| 8082 | yes | yes | yes | ✅ used |
 | 8083 | yes | yes | no | ⚠️ allowed, never used |
 | 8084 | yes | yes | no | ⚠️ allowed, never used |
 | 9090 | yes | yes | yes | ✅ used |
@@ -21,7 +21,7 @@
 | 9094 | yes | yes | no | ⚠️ allowed, never used |
 
 > [!WARNING]
-> Remove ports 8083, 8084, 9093, 9094 from the AuthorizationPolicy — allowed but never used. Ports 7070, 8082 have blocked probe attempts.
+> Remove ports 8083, 8084, 9093, 9094 from the AuthorizationPolicy — allowed but never used. Port 7070 has blocked probe attempts.
 
 ---
 
